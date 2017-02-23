@@ -7,11 +7,13 @@ import { MovieListPage } from '../pages/movie-list/movie-list';
 import { UserListPage } from '../pages/user-list/user-list';
 import { SchoolListPage } from '../pages/school-list/school-list';
 import { LoginPage } from '../pages/login/login';
-// import { Auth } from './auth.service';
+import { Auth } from './auth.service';
 
 @Component({
-  templateUrl: 'app.html',
-  // providers: [ Auth ]
+  // templateUrl: 'app.html',
+  selector: 'my-app',
+  providers: [ Auth ],
+  templateUrl: 'app/app.template.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -21,7 +23,7 @@ export class MyApp {
   pages: Array<{title: string, component: any}>;
 
   constructor(
-    // private auth: Auth,
+    private auth: Auth,
     public platform: Platform,
     public menu: MenuController
   ) {

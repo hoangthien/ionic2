@@ -15,7 +15,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AUTH_PROVIDERS } from 'angular2-jwt';
 
-// import { AppComponent }        from './app.component';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login.component';
 import { routing, appRoutingProviders } from './app.routes';
@@ -33,8 +32,8 @@ import { routing, appRoutingProviders } from './app.routes';
     LoginPage
   ],
   imports: [
-    // BrowserModule,
-    // routing,
+    BrowserModule,
+    routing,
     // FormsModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -52,8 +51,8 @@ import { routing, appRoutingProviders } from './app.routes';
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    // appRoutingProviders,
-    // AUTH_PROVIDERS,
+    appRoutingProviders,
+    AUTH_PROVIDERS,
   ]
 })
 export class AppModule { }
