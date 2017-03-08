@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { Headers, Http } from '@angular/http';
 
 @Component({
 	selector: 'page-login',
