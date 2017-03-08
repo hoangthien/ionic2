@@ -9,7 +9,7 @@ export class Auth {
     console.log('Hello Auth Provider');
   }
 
-  login(){
+  getAuth(){
 
   	return new Promise((resolve) => {
 

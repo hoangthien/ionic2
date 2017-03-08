@@ -20,7 +20,7 @@ export class MyApp {
 
     this.presentLoading();
 
-    this.auth.login().then((isLoggedIn) => {
+    this.auth.getAuth().then((isLoggedIn) => {
 
       if(isLoggedIn) {
         this.rootPage = SchoolPage

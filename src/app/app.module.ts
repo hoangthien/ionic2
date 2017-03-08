@@ -6,7 +6,7 @@ import { LoginPage } from '../pages/login/login';
 import { SchoolPage } from '../pages/school/school';
 import { SchoolService } from '../providers/school-service';
 import { Auth } from '../providers/auth';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
