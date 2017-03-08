@@ -5,7 +5,8 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SchoolPage } from '../pages/school/school';
 import { SchoolService } from '../providers/school-service';
-
+import { Auth } from '../providers/auth';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,6 @@ import { SchoolService } from '../providers/school-service';
     LoginPage,
     SchoolPage
   ],
-  providers: [SchoolService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [SchoolService, Auth, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
